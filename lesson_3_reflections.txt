@@ -3,3 +3,8 @@ For sharing! And backups.
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 If somebody else pushes something to the remote, and I'm workign on my local, if I get automatic pulls then my local changes without me knowing. Arg.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Fork: GitHub's version of clone that gives credit where it is due. Use when copying someone else's work, then adding to it, without having permission to modify the original repository.
+Clone: Copies a repository locally. Use when editing code.
+Branch: what's the command again? git branch add [name]?
