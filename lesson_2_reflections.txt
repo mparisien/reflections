@@ -21,4 +21,6 @@ Making sort of "chapters"? Nah, git log shows all commits.
 How do the diagrams help you visualize the branch structure?
 see parents, see unreachable commits, branches.
 
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+you get all the commits in each branch! In one step! Fucking magically!
 
