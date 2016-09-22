@@ -1,0 +1,40 @@
+How to use Git and GitHub
+
+Reflect: using diff to find the differences between two files
+Pretty quick. 
+But how do I know the line reference?
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Easy fix for "oh shit what did I just do?"
+If a change didn't have an effect until several versions later, I could find it.
+Easy fix for "nah, I liked it better the way it was three days ago."
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+auto-save versions probably won't have logical versions, but you won't forget to save.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+GD does independent files (or, thinks it does, but might not be the best thing). Git can hadle interdepentent files.
+
+How can you use the commands git log and git diff to view the history of files?
+git log lists all commits. Press down to scroll...
+git log just shows commit number, author, date, and message.
+to see more, use git log -p
+to search messages, you can do git log --grep='search string'
+to see the changes with git log (neat), use git log -p
+so to find the commit with the message "Revert controls," then see how many changes:
+1. git log
+2. manually scroll through and find the commit
+3. copy the commit number and the previous commit number
+4. use git diff commit1 commit2
+or:
+1. git log -p --grep='Revert controls'
+
+How might using version control make you more confident to make changes that could break something?
+OH DUDE AMAZEBALLS. git checkout (commit id) changes the files in the repository to match the snapshot (commit id). Debug is easy, run through the commits till you find the spot you messed up, use git diff to see what went wrong.
+git checkout master will take you to the most recent commit.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+learningbranch.com
+
+
+
